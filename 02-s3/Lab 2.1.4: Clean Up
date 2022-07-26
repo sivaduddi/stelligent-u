@@ -1,0 +1,3 @@
+  aws s3 rm s3://stelligent-u-sivaiah.labs --recursive                     -- To Empty 
+	
+  aws s3 rb s3://stelligent-u-sivaiah.labs --force                         -- Remove bucket
