@@ -1,0 +1,13 @@
+aws s3api put-object --bucket stelligent-u-sivaiah.labs --key data/file_1.txt --body file_1.txt                    -- To put a file
+
+aws s3api put-object --bucket stelligent-u-sivaiah.labs --key data/my_images.tar.bz2 --body my_images.tar.bz2       -- To put a Images
+
+aws s3api put-object --bucket stelligent-u-sivaiah.labs --key data/big-video-file.mp4 --body e:\media\videos\f-sharp-3-data-services.mp4    -- upload of a video file
+
+aws s3 cp sample2.txt s3://stelligent-u-sivaiah.labs/data/
+aws s3 cp file_1.txt s3://stelligent-u-sivaiah.labs/data --region "us-west-2"
+aws s3 cp --recursive siva_directory s3://stelligent-u-sivaiah.labs/data --region "us-west-2"     -- To copy the files recursively to your s3 bucket
+aws s3 sync siva_directory s3://stelligent-u-sivaiah.labs/ --region "us-west-2"                   -- Sync your local directory to your S3 bucket
+
+aws s3 ls s3://stelligent-u-sivaiah.labs                                                          -- List the contents of the bucket after each upload.
+aws s3 ls s3://stelligent-u-sivaiah.labs --recursive
