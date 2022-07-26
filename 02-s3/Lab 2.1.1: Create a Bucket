@@ -1,0 +1,7 @@
+	aws s3 mb s3://stelligent-u-sivaiah.labs --region us-west-2                  -- To create S3 Bucket
+   
+                    [OR]
+                    
+	aws s3 mb s3://stelligent-u-sivaiah.labs --region us-west-2 --no-verify-ssl     
+	
+	aws s3 ls s3://stelligent-u-sivaiah.labs --recursive --human-readable --summarize    -- List the bucket
