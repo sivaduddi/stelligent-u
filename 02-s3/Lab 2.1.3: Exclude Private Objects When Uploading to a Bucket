@@ -1,0 +1,6 @@
+
+	aws s3 cp --recursive  siva_directory s3://stelligent-u-sivaiah.labs/ --exclude "*" --include "first*" --region "us-west-2"     -- Copying Multiple Files Using Wildcard
+	aws s3 sync . s3://mybucket --exclude "*.jpg"
+	aws s3 cp c:\sync s3://siva_directory/sync --recursive --exclude * --include *.sql
+  
+  
